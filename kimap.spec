@@ -23,6 +23,7 @@ BuildRequires: cmake(KF5CoreAddons)
 BuildRequires: cmake(KF5I18n)
 BuildRequires: cmake(KF5KIO)
 BuildRequires: cmake(KF5Mime)
+BuildRequires: cmake(KF5KDELibs4Support)
 BuildRequires: cmake(Qt5Core)
 BuildRequires: cmake(Qt5Test)
 BuildRequires: sasl-devel
