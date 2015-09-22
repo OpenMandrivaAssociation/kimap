@@ -1,3 +1,5 @@
-sources:
-  "kimap-15.07.90.tar.xz": 97d9eed36f353cbac2e833827d6b2256a4f9ab5b
+removed_sources:
+  kimap-15.07.90.tar.xz: 97d9eed36f353cbac2e833827d6b2256a4f9ab5b
   kimap-15.08.0.tar.xz: 402e19a3be4e95a136bea709fadef4015574bb8d
+sources:
+  kimap-15.08.1.tar.xz: ad85b5462d0400ecbc16ff124f8902aad30998f7
