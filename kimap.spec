@@ -16,8 +16,7 @@ Summary: KDE library for accessing IMAP servers
 URL: http://kde.org/
 License: GPL
 Group: System/Libraries
-BuildRequires: cmake
-BuildRequires: ninja
+BuildRequires: cmake(ECM)
 BuildRequires: cmake(KF5Codecs)
 BuildRequires: cmake(KF5CoreAddons)
 BuildRequires: cmake(KF5I18n)
@@ -30,14 +29,14 @@ BuildRequires: sasl-devel
 BuildRequires: boost-devel
 
 %description
-KDE library for accessing IMAP servers
+KDE library for accessing IMAP servers.
 
 %package -n %{libname}
 Summary: KDE library for accessing IMAP servers
 Group: System/Libraries
 
 %description -n %{libname}
-KDE library for accessing IMAP servers
+KDE library for accessing IMAP servers.
 
 %package -n %{devname}
 Summary: Development files for %{name}
