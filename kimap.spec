@@ -11,7 +11,7 @@ Version:	15.12.0
 %else
 %define ftpdir stable
 %endif
-Release:	2
+Release:	3
 Source0: http://download.kde.org/%{ftpdir}/applications/%{version}/src/%{name}-%{version}.tar.xz
 Summary: KDE library for accessing IMAP servers
 URL: http://kde.org/
