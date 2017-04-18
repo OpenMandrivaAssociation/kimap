@@ -4,7 +4,7 @@
 %define _disable_lto 1
 
 Name: kimap
-Version:	17.03.80
+Version:	17.04.0
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
@@ -28,6 +28,7 @@ BuildRequires: cmake(Qt5Core)
 BuildRequires: cmake(Qt5Test)
 BuildRequires: sasl-devel
 BuildRequires: boost-devel
+Requires: %{libname} = %{EVRD}
 
 %description
 KDE library for accessing IMAP servers.
@@ -35,6 +36,7 @@ KDE library for accessing IMAP servers.
 %package -n %{libname}
 Summary: KDE library for accessing IMAP servers
 Group: System/Libraries
+Requires: %{name} = %{EVRD}
 
 %description -n %{libname}
 KDE library for accessing IMAP servers.
@@ -56,6 +58,9 @@ Development files (Headers etc.) for %{name}.
 
 %install
 %ninja_install -C build
+%find_lang libkimap5
+
+%files -f libkimap5.lang
 
 %files -n %{libname}
 %{_libdir}/*.so.%{major}*
