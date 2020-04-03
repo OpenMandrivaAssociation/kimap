@@ -4,7 +4,7 @@
 %define _disable_lto 1
 
 Name: kimap
-Version:	20.03.80
+Version:	20.03.90
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
