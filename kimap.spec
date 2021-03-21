@@ -1,7 +1,6 @@
 %define major 5
 %define libname %mklibname KF5IMAP %{major}
 %define devname %mklibname KF5IMAP -d
-%define _disable_lto 1
 
 Name: kimap
 Version:	21.03.80
