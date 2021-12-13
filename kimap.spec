@@ -27,6 +27,9 @@ BuildRequires: cmake(Qt5Core)
 BuildRequires: cmake(Qt5Test)
 BuildRequires: sasl-devel
 BuildRequires: boost-devel
+# For QCH format docs
+BuildRequires: doxygen
+BuildRequires: qt5-assistant
 Requires: %{libname} = %{EVRD}
 
 %description
