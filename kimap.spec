@@ -3,14 +3,14 @@
 %define devname %mklibname KF5IMAP -d
 
 Name: kimap
-Version:	23.08.4
+Version:	23.08.5
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
 %else
 %define ftpdir stable
 %endif
-Release:	2
+Release:	1
 Source0: http://download.kde.org/%{ftpdir}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 Summary: KDE library for accessing IMAP servers
 URL: http://kde.org/
