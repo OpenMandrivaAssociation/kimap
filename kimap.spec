@@ -6,7 +6,7 @@
 %define devname %mklibname KF6IMAP -d
 
 Name:		kimap
-Version:	26.04.3
+Version:	26.08.0
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
@@ -28,7 +28,7 @@ BuildRequires: cmake(KF6Codecs)
 BuildRequires: cmake(KF6CoreAddons)
 BuildRequires: cmake(KF6I18n)
 BuildRequires: cmake(KF6KIO)
-BuildRequires: cmake(KPim6Mime)
+BuildRequires: cmake(KF6Mime)
 BuildRequires: cmake(Qt6)
 BuildRequires: cmake(Qt6Core)
 BuildRequires: cmake(Qt6Test)
